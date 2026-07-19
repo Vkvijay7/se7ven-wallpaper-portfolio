@@ -6,12 +6,12 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 
 WORKDIR /app
 
-# Copy python requirements and install
-COPY requirements.txt .
+# Copy python requirements from the backend directory and install
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend files
-COPY . .
+# Copy backend source files into the container
+COPY backend/ .
 
 # Expose port and run Uvicorn
 EXPOSE 8000
