@@ -1,0 +1,19 @@
+# Node dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/local.properties
+
+# Python virtual environment and cache
+backend/__pycache__/
+backend/venv/
+backend/.venv/
+backend/media/*.jpg
+backend/media/*.png
+backend/media/history.json
+
+# Local Gemini / agent workspace logs
+.agents/
+.gemini/
+.system_generated/
+*.log
+*.tmp

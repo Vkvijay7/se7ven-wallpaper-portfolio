@@ -1,0 +1,10 @@
+{
+  "name": "pincrop-root",
+  "version": "1.0.0",
+  "description": "Pinterest Wallpaper Downloader & Smart Cropper Root",
+  "scripts": {
+    "start:backend": "cd backend && python main.py",
+    "start:frontend": "cd frontend && npm run dev",
+    "start": "npx -y concurrently --kill-others \"npm run start:backend\" \"npm run start:frontend\""
+  }
+}
